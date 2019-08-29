@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <data>
+        <variable
+            name="datetime"
+            type="mdev.k015_databinding.ModelDateTime" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:text="@{datetime.mDate}"
+            />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:text="@{datetime.mTime}"/>
+
+        <TextView
+            android:id="@+id/tvClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:background="@drawable/bg_click"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="คลิ๊ก"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</layout>
